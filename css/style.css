@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary: #f33f3f;
+    --white:#fff;
+    --dark-gray: #343a40;
+    --nav-background: #212529;
+    --title-color:#1a6692;
+    --gray:#4a4a4a;
+    --white-background: #f7f7f7;
+}
+header{
+    height: 100vh;
+    background-image: url('../images/slide_01.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section{
+    padding: 5rem 0;
+}
+.container{
+    width: 1152px;
+    margin: auto;
+}
+.navigation-wrapper{
+    background-color: var(--nav-background);
+    padding: 17px 0;
+}
+.navigation-wrapper .logo{
+    display: inline-block;
+}
+.navigation-wrapper .logo h2{
+    text-transform: uppercase;
+    color: var(--white);
+}
+.navigation-wrapper .logo span{
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.navigation-wrapper .navigation{
+    float: right;
+}
+.navigation-wrapper .navigation ul{
+    display: flex;
+}
+.navigation-wrapper .navigation ul li{
+    list-style: none;
+    margin-right: 1.5rem;
+
+}
+.navigation-wrapper .navigation ul li:last-child{
+    margin-right: 0;
+}
+.navigation-wrapper .navigation ul li a{
+    text-decoration: none;
+    padding: 25px 16px;
+    color: var(--white);
+    transition: all 0.5s ease;
+    
+}
+.navigation-wrapper .navigation ul li a:hover{
+    border-bottom: 3px solid var(--primary);
+}
+.navigation-wrapper .navigation ul li a.active{
+    border-bottom: 3px solid var(--primary);
+}
+.header-text{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-text h3{
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+.header-text h2{
+    font-size: 3.1rem;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+/* Product section design */
+
+.product-text-wrapper{
+    display: flex;
+}
+.product-text-wrapper h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: inline-block;
+    flex: 1;
+    margin-bottom: 3rem;
+}
+.product-text-wrapper h3{
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+    float: right;
+}
+.product-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 5rem;
+    margin-bottom: 4rem;
+}
+.product-card-wrapper .card{
+    background-color: var(--white-background);
+    padding-bottom: 2rem;
+}
+.product-card-wrapper .card .card-image{
+    margin-bottom: 1.5rem;
+}
+.product-card-wrapper .card .card-text{
+    padding: 0 1.5rem;
+}
+.product-card-wrapper .card .card-text a{
+    text-decoration: none;
+}
+.product-card-wrapper .card .card-text h3{
+    font-weight: 600;
+    color: var(--title-color);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.product-card-wrapper .card .card-text span{
+    float: right;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.product-card-wrapper .card .card-text p{
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+.product-card-wrapper .card .card-text i{
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+.product-card-wrapper .card .card-text span.review{
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* About section design */
+
+.about-heading{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+.about-card-wrapper{
+    display: flex
+}
+.about-card-wrapper .about-card-text h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--title-color);
+}
+.about-card-wrapper .about-card-text p{
+    color: var(--gray);
+    margin-bottom: 1.3rem;
+}
+.left-content-list ul{
+    margin-bottom: 2rem;
+}
+.left-content-list{
+    margin-left: 1.2rem;
+}
+.left-content-list ul li{
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+.left-content-list ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    transition: all 0.5s ease;
+}
+.left-content-list ul li a:hover{
+    color: var(--primary);
+}
+.about-card-text button{
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 0.3rem;
+    color: var(--white);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.about-card-text button:hover{
+    background-color: var(--dark-gray);
+}
+.sixteen-product-wrapper{
+    padding: 2rem 4rem;
+    background-color: var(--white-background);
+    position: relative;
+}
+.sixteen-product-left-content{
+    display: inline-block;
+}
+.sixteen-product-left-content h2{
+    color: var(--title-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.sixteen-product-left-content p{
+    color: var(--gray);
+}
+.sixteen-product-wrapper button{
+    top: 50%;
+    transform: translate(-50%,-50%);
+    right: 0;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: inline-block;
+    position: absolute;
+}
+.sixteen-product-wrapper button:hover{
+    background-color: var(--dark-gray);
+}
+footer{
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.footer-text p{
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+.footer-text p a{
+    text-decoration: none;
+    color: var(--primary);
+}
